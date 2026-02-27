@@ -15,8 +15,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
-GEMINI_MODEL = "gemini-1.5-flash"
-
+GEMINI_MODEL = "gemini-1.5-flash-latest"
 # ── In-memory cache ───────────────────────────────────────────
 recommendations_cache = {}
 
