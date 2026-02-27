@@ -14,8 +14,8 @@ CORS(app)
 from dotenv import load_dotenv
 load_dotenv()
 
-client = genai.Client(api_key=os.environ.get("AIzaSyBWX6PvnGYZejBhbJQY_Z8whAl2GzoYkOY"))
-GEMINI_MODEL = "gemini-2.5-flash"
+client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+GEMINI_MODEL = "gemini-1.5-flash"
 
 # ── In-memory cache ───────────────────────────────────────────
 recommendations_cache = {}
